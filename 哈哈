@@ -1,0 +1,16 @@
+#导入APK信息
+fp = open(u'e:/apk.txt')
+
+apklist = []
+while True:
+	apk = fp.readline()
+	if apk:
+		apklist.append(apk.strip())
+	else:
+		break;
+
+print 'APK:' + ' ' +apklist[0]
+MonkeyRunner.sleep(2)
+
+#安装APK
+device.installPackage(u'e:/apk/%s'%apklist[0])
