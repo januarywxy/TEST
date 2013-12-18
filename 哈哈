@@ -7,7 +7,7 @@ while True:
 	if apk:
 		apklist.append(apk.strip())
 	else:
-		break;
+	        break;
 
 print 'APK:' + ' ' +apklist[0]
 MonkeyRunner.sleep(2)
