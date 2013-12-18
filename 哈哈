@@ -10,7 +10,6 @@ while True:
 	        break;
 
 print 'APK:' + ' ' +apklist[0]
-MonkeyRunner.sleep(2)
 
 #安装APK
 device.installPackage(u'e:/apk/%s'%apklist[0])
